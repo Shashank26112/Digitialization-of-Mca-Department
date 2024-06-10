@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <section>
+        <Header>
+            <div class="mainheading">
+            <div class="heading1">
+                <img src="{% static 'css/LOGO.png' %}" alt="">
+                <h1> Digitalization of MCA Department </h1>
+
+            </div>
+            <div class="heading2">  
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="{% url 'course' %}" target="_blank">Course</a></li>
+                        <li><a href="{% url 'searchalumini' %}" target="_blank">Search</a></li>
+                        <li><a href="{% url 'contactus' %}" target="_blank">Contactus</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a> </li>
+                    </ul>
+                </nav>
+            </div>              
+        </div>
+        </Header>
+    </section>
+    <section>
+        <div class="content">
+            <div class="poster">
+            </div>
+        </div>
+    </section>
+         
+    <section>
+        <div class="guidelines">
+            <h1> Course Registration </h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="services">
+            <a href="{% url 'course' %}" target="_blank">
+                <div class="content2">
+                    <!-- <h3>Search Charging Point</h3> -->
+                    <img src="{% static 'css/Form.webp' %}" alt="">
+                    <a href="{% url 'course' %}">
+                        <div class="btn">
+                            <button type="submit">Apply</button>
+                        </div>
+                    </a>
+                    <!-- <img src="{% static 'css/CAR-2.jpg' %}" alt=""> -->
+                </div>
+            </a>
+
+            <a href="{% url 'course' %}" target="_blank">
+                <div class="content1">
+                    <h3>
+                        Course registration for the upcoming semester will open on June 1st. Students are advised to review the course catalog and prerequisites to ensure they meet all requirements. Registration can be completed online through the university portal, where students can also find guidance on selecting courses that align with their academic goals.
+                        <br> <br>
+                        It's crucial to register early to secure a spot in desired classes, as popular courses fill up quickly. Advising sessions are available for students needing assistance with course selection. For additional support, contact the registrar's office or visit the university's academic advising center.
+                    </h3>
+                    <!-- <img src="{% static 'css/Step1.webp' %}" alt=""> -->
+                </div>
+            </a>
+        </div>
+
+    <section>
+        <div class="guidelines">
+            <h1>Search for Alumini </h1>
+        </div>
+    </section>
+    
+        <div class="services">
+            <a href="{% url 'register' %}" target="_blank">
+                <div class="content1">
+                    <h3>
+                         Explore our platform to easily locate nearby EV charging points, ensuring your electric vehicle is always ready for the road, With real-time updates and intuitive search functionality, finding the closest charging station has never been simpler.  <br><br>
+                         From bustling cities to remote highways, our extensive network of charging points provides convenience wherever you roam, seamless travels as you recharge your EV with ease at our carefully curated stations. <br><br>
+                         Join the electric revolution and embrace sustainable transportation by accessing our user-friendly EV charging point search today. <br>
+                    </h3>
+                </div>
+            </a>
+
+            <a href="{% url 'searchalumini' %}" target="_blank">
+                <div class="content2">
+                    <img src="{% static 'css/A-3.jpg' %}" alt="">
+                    <a href="{% url 'searchalumini' %}">
+                        <div class="btn">
+                            <button type="submit">Search</button>
+                        </div>
+                    </a>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

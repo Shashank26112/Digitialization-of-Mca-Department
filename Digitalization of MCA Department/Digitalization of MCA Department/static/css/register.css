@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+.innerheading1{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerheading1 h1{
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading img{
+    width: 50px;
+    height: 50px;
+}
+.container{ 
+    background-image: url(Course.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d6d6d6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.innercontainer{
+    width: 500px;
+    height: 500px;
+    /* background-color: #565656; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    border: solid 2px #d6d6d6;
+    backdrop-filter: blur(5px);
+    background-color: #7e7e7e60;
+    width: 500px;
+    height: 460px;
+}
+.login-container:hover{
+    background-color: #00000060;
+    box-shadow: 0px 0px 25px #1f1f1f; 
+    transition: ease-in-out 0.5s;
+}
+.login-container h2{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.login-form{
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form label{
+    color: #ffffff;
+    margin: 10px;
+}
+label{
+    display: block;
+    width: 150px;
+    padding: 1px;
+    font-size: 30px;
+}
+input{
+    height: 30px;
+    width: 210px;
+}
+
+.btn{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    width: 200px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: 600;
+    color: #1e1e1e;
+    background-color: #dceeff;
+    box-shadow: 0px 0px 20px #1f1f1f; 
+    transition: ease-in-out 0.5s;
+}
+p{
+    text-align: center;
+    color: #c6c6c6;
+    font-size: 20px;
+}
+p a{
+    color: #c6c6c6;
+}
+p a:hover{
+    color: #ffffff;
+    transition: ease-in-out 0.5s;
+}

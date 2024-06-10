@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <div class="innerheading1">
+                <img src="{% static 'css/LOGO.png' %}" alt="">
+                <h1> Digitalization of MCA Department </h1>
+
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="innercontainer">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                        <div class="login-container">
+                     <h2>Register Here</h2>
+
+                    <div class="login-form">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="login-form">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="password" required>
+                    </div>
+                    <div class="login-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="email" required>
+                    </div>
+                    <div class="login-form">
+                        <label for="phno">Phone No:</label>
+                        <input type="phno" id="phno" name="phno" maxlength="10" placeholder="phno" required>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Register</button>
+                    </div>
+                    </form>
+                    <p>Already registered? <a href="{% url 'login' %}">Click here</a></p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+</body>
+</html>

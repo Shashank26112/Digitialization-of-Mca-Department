@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Alumini Students</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/searchdetails.css' %}">
+</head>
+<body>
+    <div class="main">
+
+    <div class="container">
+        <form action="" class="search" method="GET">
+            <input type="text" placeholder="Search for Students" name="searchname">
+            <button type="submit"> <img src="{% static 'css/Search-icon.png' %}" alt=""></button>
+        </form>
+    </div>
+     <table class="content-table">
+        <thead>
+          <tr>
+                <th>Sno</th>
+                <th>Student Name</th>
+                <th>Branch</th>
+                <th>Year Of Passout</th>
+          </tr>
+        </thead>
+        {% for r in Searchalumini %}
+        <tbody>
+          <tr>
+            <th>{{forloop.counter}}</th>
+            <td>{{r.student_name}}</td>
+            <td>{{r.branch}}</td>
+            <td>{{r.yop}}</td>
+          </tr>
+          {% empty %}
+          No Data Found
+          {% endfor %}
+        </tbody>
+      </table>
+              
+    </div>
+</body>
+</html>
